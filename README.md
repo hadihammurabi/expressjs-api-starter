@@ -1,1 +1,1 @@
-# expressjs-api-starter
+# ExpressJS RESTful API Starter
