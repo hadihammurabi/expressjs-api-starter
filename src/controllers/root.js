@@ -1,13 +1,9 @@
-const index = (req, res) => {
+const router = require('express').Router();
+
+router.get('/', (req, res) => {
   res.json({
     message: `Welcome to ${process.env.APP_NAME}. Open \`src/controllers/index.js\` to edit this code.`,
   });
-};
+});
 
-const createController = (routes) => {
-  routes.get('/', index);
-};
-
-module.exports = {
-  createController,
-};
+module.exports = router;

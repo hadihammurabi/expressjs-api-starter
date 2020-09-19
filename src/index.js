@@ -3,14 +3,16 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const routes =  require('./routes');
+const createControllers = require('./controllers');
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(routes);
+(async() => {
+  await createControllers(app);
+})();
 
 const APP_PORT = process.env.APP_PORT || 8080;
 app.listen(APP_PORT, () => {
