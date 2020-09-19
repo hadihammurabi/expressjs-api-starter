@@ -1,5 +1,5 @@
-import express from 'express';
-import controllers from '../controllers';
+const express = require('express');
+const controllers = require('../controllers');
 
 const routes = express.Router();
 
@@ -7,4 +7,4 @@ const routes = express.Router();
   controllers.registerRoutes(routes);
 })();
 
-export default routes;
+module.exports = routes;

@@ -1,5 +1,5 @@
-import path from 'path';
-import fs from 'fs';
+const path = require('path');
+const fs = require('fs');
 
 const registerRoutes = async (routes) => {
   let controllers = fs.readdirSync(__dirname);
@@ -15,6 +15,6 @@ const registerRoutes = async (routes) => {
 
 };
 
-export default {
+module.exports = {
   registerRoutes,
 };

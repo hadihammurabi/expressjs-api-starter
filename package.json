@@ -14,22 +14,18 @@
     "url": "git+https://github.com/hadihammurabi/expressjs-api-starter.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Hadi Hidayat Hammurabi <hadihammurabi@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hadihammurabi/expressjs-api-starter/issues"
   },
   "homepage": "https://github.com/hadihammurabi/expressjs-api-starter#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "dotenv": "^8.0.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/node": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.4"
   }
 }
